@@ -49,8 +49,49 @@ nav a {
 /* header rltd style */
 .header {
   background-color: #fff8f3;
+  background-image: url(./images/header_bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
 .benner {
-  padding: 30px 30px 30px 150px;
+  padding: 30px 30px 0px 150px;
+  justify-content: space-around;
   display: flex;
+  align-items: center;
+}
+.benner .profile-pic {
+  width: 500px;
+}
+.benner-greeting {
+  font-size: 45px;
+  color: #474747;
+  margin-bottom: 0;
+}
+.benner-title {
+  font-size: 85px;
+  font-weight: 7000;
+  margin: 5px;
+  margin-bottom: 20px;
+}
+.benner-content {
+  max-width: 500px;
+}
+.about {
+  border-radius: 130px;
+  background: #fff8f3;
+  padding: 130px;
+  margin: 130px 0;
+}
+.section-title {
+  color: #181818;
+  text-align: center;
+  font-size: 35px;
+  font-style: normal;
+
+  font-weight: 700;
+}
+.section-description {
+  color: #757575;
+  text-align: center;
+  font-size: 18px;
 }
