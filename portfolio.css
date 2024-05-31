@@ -10,7 +10,7 @@ body {
   font-optical-sizing: auto;
 
   font-style: normal;
-  font-variation-settings: 'wdth' 100;
+  font-variation-settings: 'width' 100;
 }
 nav > ul {
   display: flex;
@@ -36,7 +36,7 @@ nav {
   font-family: open sans;
   font-size: 45px;
   font-style: normal;
-  font-weight: 800px;
+  font-weight: 800;
 }
 nav li {
   list-style: none;
@@ -69,7 +69,7 @@ nav a {
 }
 .benner-title {
   font-size: 85px;
-  font-weight: 7000;
+  font-weight: 700;
   margin: 5px;
   margin-bottom: 20px;
 }
@@ -169,4 +169,42 @@ textarea {
 }
 .social-links a {
   margin-right: 25px;
+}
+body {
+  flex-wrap: wrap;
+}
+/* responsib files */
+
+/* mobile device */
+.hide {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .skills-container,
+  .resume-container {
+    flex-direction: column;
+  }
+  #what-i-do-description {
+    padding: 20px;
+  }
+  footer {
+    padding: 10px;
+  }
+  .footer-column {
+    width: 100%;
+  }
+  .contact input[type='text'],
+  .contact input[type='email'],
+  textarea {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 576px) (max-width: 960px) {
+  .skills-container,
+  .resume-cotainer {
+    flex-direction: column;
+  }
+  footer {
+    padding: 30px;
+  }
 }
